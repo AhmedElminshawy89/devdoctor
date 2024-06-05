@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-
+import AboutUs from "./components/AboutUs";
+// import Banner from "./components/Banner";
+// import Contact from "./components/Contact";
+// import ContactBtn from "./components/ContactBtn";
+// import ContactPhone from "./components/ContactPhone";
+import FavOther from "./components/FavOther";
+// import Feature from "./components/Feature";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+// import ScrollTopBtn from "./components/ScrollTopBtn";
+import Services from "./components/Services";
+// import SwiperHome from "./components/SwiperHome";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Services />
+      <AboutUs />
+      <FavOther />
+      <Footer /> 
+      {/* <ScrollTopBtn />
+      <ContactBtn />
+      <ContactPhone />
+      <SwiperHome />
+      <Feature />
+      <Banner />
+      <Contact />
+ */}
+    </>
   );
 }
 
