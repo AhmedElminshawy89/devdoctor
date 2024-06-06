@@ -3,7 +3,7 @@ import doc from '../assets/image/choose-us.jpg';
 
 const FavOther = () => {
   return (
-    <section className="section__container why__container">
+    <section className="section__container why__container" id='اهتمامنا'>
       <div className="why__image">
         <img src={doc} alt="لماذا تختارنا" />
       </div>

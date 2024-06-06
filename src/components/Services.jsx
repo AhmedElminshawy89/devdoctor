@@ -19,7 +19,7 @@ const Services = () => {
           <p>
             تشخيص دقيق، نتائج سريعة: اختبر تجربة فحص المختبر عالي الجودة في مرفقنا.
           </p>
-          <a href="#">تعرف أكثر</a>
+          <a href="#خدماتنا">تعرف أكثر</a>
         </div>
         <div className="service__card">
           <span><RiMentalHealthLine /></span>
@@ -27,7 +27,7 @@ const Services = () => {
           <p>
             تقييماتنا الدقيقة والتقييمات الخبرية تساعدك على البقاء نشطًا فيما يتعلق بصحتك.
           </p>
-          <a href="#">تعرف أكثر</a>
+          <a href="#خدماتنا">تعرف أكثر</a>
         </div>
         <div className="service__card">
           <span><RiHospitalLine /></span>
@@ -35,7 +35,7 @@ const Services = () => {
           <p>
             احصل على رعاية فموية شاملة مع طب الأسنان. ثق بنا في الحفاظ على ابتسامتك صحية ومشرقة.
           </p>
-          <a href="#">تعرف أكثر</a>
+          <a href="#خدماتنا">تعرف أكثر</a>
         </div>
       </div>
     </section>

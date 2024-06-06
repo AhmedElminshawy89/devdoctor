@@ -16,6 +16,14 @@
   margin: 0;
   box-sizing: border-box;
   direction: rtl;
+  transition: all .1s ease-in-out;
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -ms-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 .section__container {
@@ -92,16 +100,36 @@ header {
   justify-content: center;
   gap: 2rem;
 }
-
+.link{
+  transition: border-bottom .2s ease-in-out;
+  -webkit-transition: border-bottom .2s ease-in-out;
+  -moz-transition: border-bottom .2s ease-in-out;
+  -ms-transition: border-bottom .2s ease-in-out;
+  -o-transition: border-bottom .2s ease-in-out;
+}
 .link a {
   padding: 0.5rem;
   color: var(--primary-color-light);
+  font-size: 20px;
+  color: #ffff;
+  font-weight: 700;
 }
-
+.fixed-header{
+  position: fixed;
+  background-color: rgb(18 172 142 / .8);
+  width: 100%;
+  padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5555555555555555555555555;
+}
 .link a:hover {
   color: var(--white);
 }
-
+.active-link{
+  border-bottom: 3px solid var(--secondary-color);
+}
 .header__container {
   display: flex;
   align-items: center;
@@ -209,6 +237,24 @@ header {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
+.service__card .image{
+  overflow: hidden;
+}
+.service__card img {
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+}
+
+.service__card img:hover {
+  transform: scale(1.1);
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
 
 .service__card span {
   display: inline-block;
@@ -226,6 +272,7 @@ header {
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--text-dark);
+  margin-top: 15px;
 }
 
 .service__card p {
@@ -573,6 +620,7 @@ header {
     transition: left 0.3s ease;
     z-index: 1000;
     width: 100%;
+    z-index: 55555555555555555;
   }
   
   .drawer.open {
@@ -628,3 +676,204 @@ header {
     color: #fff;
   }
   
+
+
+
+  
+.pricing-cta-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.pricing-cta-wrapper::before {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  content: "";
+  height: 100%;
+  background: #001659;
+  opacity: .6;
+  z-index: -1;
+}
+
+.pricing-cta-wrapper .pricing-contents h1 {
+  display: block;
+  margin-top: -15px;
+}
+
+.pricing-cta-wrapper .pricing-contents a {
+  line-height: 1px;
+  padding: 28px 45px;
+  display: inline-block;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  overflow: hidden;
+  margin-right: 30px;
+  margin-top: 25px;
+}
+
+.pricing-cta-wrapper .pricing-contents a:hover {
+  color: #FFF;
+  background: #FF5E14;
+  border-color: #FF5E14;
+}
+
+.pricing-cta-wrapper .pricing-contents .btn-cta {
+  display: inline-block;
+  overflow: hidden;
+  clear: both;
+  margin-bottom: -15px;
+  margin-top: 25px;
+}
+
+.pricing-cta-wrapper .pricing-contents .btn-cta .icon {
+  float: left;
+  overflow: hidden;
+  margin-right: 20px;
+  font-size: 60px;
+  color: #FF5E14;
+}
+
+.pricing-cta-wrapper .pricing-contents .btn-cta .content {
+  overflow: hidden;
+  text-align: left;
+}
+
+.scroll-btn-wrapper {
+  position: fixed;
+  right: 5px;
+  bottom: 15px;
+  background: var(--primary-color);
+  width: 46px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 25px;
+  border-radius: 50%;
+  z-index: 555;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: 555;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+@media(min-width:992px){
+  .appointment{
+    background-color: #fff;
+    max-width: 1200px;
+    width: 90%;
+    margin: 80px auto;
+    border: 1px solid #ffffff;
+    box-shadow: 2px 2px 30px rgb(0 0 0 / .12);
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+  }
+}
+@media(max-width:992px){
+  .appointment{
+    background-color: #fff;
+    max-width: 1200px;
+    width: 90%;
+    margin: 80px auto;
+    border: 1px solid #ffffff;
+    box-shadow: 2px 2px 30px rgb(0 0 0 / .12);
+    display: grid;
+    grid-template-columns: 1fr ;
+  }
+  .apointment-video img{
+    max-height: 452px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+.apointment-video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.apointment-text{
+  padding: 50px;
+}
+.appointment-text h2{
+  font-size: 2.8rem;
+  color: #122853;
+  line-height: 3rem;
+}
+.appointment-text p{
+  font-size: 0.9rem;
+  color: #535353;
+  line-height: 1.4rem;
+  letter-spacing: .3px;
+}
+.box-day{
+  border: 1px solid #eee;
+    background-color: #f5f7fb;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+
+.gallery {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--section-background);
+  position: relative;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.gallery .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+.gallery .container .box {
+  padding: 15px;
+  background-color: #fff;
+}
+
+.gallery .container .box .image {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery .container .box .image::before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255 255 255 / 40%);
+  height: 0%;
+  width: 0%;
+  opacity: 0;
+  z-index: 2;
+}
+
+.gallery .container .box .image:hover::before {
+  animation: flashing var(--main-transition);
+}
+
+.gallery .container .box .image img {
+  max-width: 100%;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+.gallery .container .image:hover img {
+  transform: rotate(5deg) scale(1.1);
+}

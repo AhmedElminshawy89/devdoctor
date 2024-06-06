@@ -2,7 +2,7 @@ import about from "../assets/image/about.jpg";
 
 const AboutUS = () => {
   return (
-    <section className="section__container about__container">
+    <section className="section__container about__container" id="تعرف_علينا">
       <div className="about__content">
         <h2 className="section__header">معلومات عنا</h2>
         <p>

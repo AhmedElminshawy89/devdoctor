@@ -22,10 +22,10 @@ function ScrollTopBtn() {
     };
   }, []);
   return (
-    <div className={`${isVisible ? "scroll-btn-wrapper" : "hidden"}`}>
-      <button type="button" onClick={scrollToTop}>
+    <div className={`${isVisible ? "scroll-btn-wrapper" : "hidden"}`} onClick={scrollToTop}>
+      {/* <span  }> */}
         <IoIosArrowUp />
-      </button>
+      {/* </span> */}
     </div>
   );
 }
