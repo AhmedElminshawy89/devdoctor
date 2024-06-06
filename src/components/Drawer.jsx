@@ -14,21 +14,31 @@ const Drawer = ({ isOpen, onClose }) => {
           </button>
         </div>
         <ul>
-          <li>
-            <a href="#">الرئيسية</a>
-          </li>
-          <li>
-            <a href="#">معلومات عنا</a>
-          </li>
-          <li>
-            <a href="#">الخدمات</a>
-          </li>
-          <li>
-            <a href="#">صفحات</a>
-          </li>
-          <li>
-            <a href="#">المدونة</a>
-          </li>
+        <li className={`link `}
+          >
+              <a href="#الرئيسية">الرئيسية</a>
+            </li>
+            <li className={`link `}
+            
+            >
+              <a href="#تعرف علينا">تعرف علينا</a>
+            </li>
+            <li className={`lin`}
+            >
+              <a href="#خدماتنا">خدماتنا</a>
+            </li>
+            <li className={`link`}
+            >
+              <a href="#اهتمامنا">اهتمامنا</a>
+            </li>
+            <li className={`link `}
+            >
+              <a href="#ما يميزنا">ما يميزنا</a>
+            </li>
+            <li className={`link `}
+            >
+              <a href="#المواعيد">المواعيد</a>
+            </li>
         </ul>
         <div className="drawer__socials">
           <FaFacebook />
