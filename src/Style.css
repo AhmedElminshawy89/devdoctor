@@ -831,6 +831,17 @@ header {
   padding-left: 80px;
   padding-right: 80px;
 }
+@media(max-width:476px){
+  .gallery {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    overflow: hidden;
+  } 
+  .gallery .container .box .image img{
+    max-width: 270px !important;
+    width: 100% !important;
+  }
+}
 
 .gallery .container {
   display: grid;
