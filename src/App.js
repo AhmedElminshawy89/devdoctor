@@ -5,6 +5,7 @@ import ContactPhone from "./components/ContactPhone";
 import Gallery from "./components/ContactWithoutForm";
 import FavOther from "./components/FavOther";
 import Footer from "./components/Footer";
+import Form from "./components/Form";
 import Header from "./components/Header";
 import ScrollTopBtn from "./components/ScrollTopBtn";
 import SecServices from "./components/SecServices";
@@ -18,11 +19,11 @@ function App() {
       <SecServices/>
       <ScrollTopBtn />
       <FavOther />
-      <Gallery/>
       <Appointment/>
+      <Form/>
       <Footer /> 
-      {/* <ContactBtn />
-      <ContactPhone /> */}
+      <ContactBtn />
+      <ContactPhone />
     </>
   );
 }

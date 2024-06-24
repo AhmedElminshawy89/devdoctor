@@ -1,38 +1,41 @@
-import { FaHandHoldingHeart, FaTruck, FaHospital } from 'react-icons/fa';
-import doc from '../assets/image/choose-us.jpg';
+import { FaHandHoldingHeart } from "react-icons/fa";
+import doc from "../assets/image/dr4.jpg";
+import { TiGroup } from "react-icons/ti";
+import { MdCleanHands } from "react-icons/md";
 
 const FavOther = () => {
   return (
-    <section className="section__container why__container" id='اهتمامنا'>
+    <section className="section__container why__container" id="اهتمامنا">
       <div className="why__image">
         <img src={doc} alt="لماذا تختارنا" />
       </div>
       <div className="why__content">
         <h2 className="section__header">لماذا تختارنا</h2>
         <p>
-          بالتزام ثابت نحو رفاهيتك، يضمن فريقنا من المتخصصين المدربين تدريباً عالياً أنك تتلقى تجارب مرضية استثنائية.
+          بالتزام ثابت نحو رفاهيتك، يضمن فريقنا من المتخصصين المدربين تدريباً
+          عالياً أنك تتلقى تجارب مرضية استثنائية.
         </p>
         <div className="why__grid">
-          <span><FaHandHoldingHeart /></span>
+          <span>
+            <FaHandHoldingHeart />
+          </span>
           <div>
-            <h4>الرعاية المكثفة</h4>
-            <p>
-              وحدة العناية المركزة لدينا مجهزة بتكنولوجيا متقدمة ويشرف عليها فريق من المهنيين.
-            </p>
+            <h4>راحه المريض</h4>
+            <p>راحة المريض هي أولويتنا القصوى في كل خطوة نقوم بها.</p>
           </div>
-          <span><FaTruck /></span>
+          <span>
+            <TiGroup />
+          </span>
           <div>
-            <h4>سيارة إسعاف مجهزه</h4>
-            <p>
-              مبادرة متعاطفة تهدف إلى إعطاء الأولوية لصحتك ورفاهيتك دون أي مخاوف من التجهيز بالسياره.
-            </p>
+            <h4>طاقم طبي متكامل</h4>
+            <p>طاقم طبي متكامل يضم أطباء وممرضين متخصصين في رعاية الصحة.</p>
           </div>
-          <span><FaHospital /></span>
+          <span>
+            <MdCleanHands />
+          </span>
           <div>
-            <h4>الخدمات الطبية والجراحية</h4>
-            <p>
-              خدماتنا الطبية والجراحية تقدم حلولاً صحية متقدمة لتلبية الاحتياجات الطبية.
-            </p>
+            <h4>التعقيم المستمر والنظافه</h4>
+            <p>التعقيم المستمر والنظافة هما جزء أساسي من رعايتنا للمرضى.</p>
           </div>
         </div>
       </div>

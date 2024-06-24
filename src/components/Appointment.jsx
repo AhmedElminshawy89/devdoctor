@@ -1,4 +1,4 @@
-import img from "../assets/image/about.jpg";
+import img from "../assets/image/dr3.jpg";
 const Appointment = () => {
   return (
     <section id="المواعيد" className="appointment">
@@ -8,43 +8,33 @@ const Appointment = () => {
       <div className="apointment-text">
         <h2>مواعيدنا</h2>
         <p>
-          مرحبًا بكم في موقع الرعاية الصحية الخاص بنا، وجهتك الشاملة للحصول على معلومات صحية موثوقة وشاملة. نحن ملتزمون بتعزيز الصحة وتوفير الموارد القيمة لتمكينك في رحلتك الصحية.
-        </p>
-        <p>
-          استكشف مجموعتنا الواسعة من المقالات الإرشادية والمواد التوجيهية التي تغطي مجموعة واسعة من الموضوعات الصحية. من فهم الحالات الطبية الشائعة إلى نصائح الحفاظ على نمط حياة صحي، تم تصميم محتوياتنا لتثقيفك، وإلهامك، ودعمك في اتخاذ قرارات صحية مستنيرة.
-        </p>
-        <p>
-          اكتشف نصائح صحية عملية وإرشادات للحياة لتحسين صحتك الجسدية والعقلية. نحن نؤمن بأن التغييرات الصغيرة يمكن أن تؤدي إلى تحسينات كبيرة في جودة حياتك، ونحن هنا لنرشدك في طريقك نحو حياة أكثر صحة وسعادة.
-        </p>
+              مرحبًا، حيث تعتبر تجارب المرضى الاستثنائية أولويتنا. مع الرعاية المتعاطفة، والمرافق المتطورة، والنهج الموجه نحو المريض، نحن ملتزمون بصحتك.
+              <p>دكتور احمد شامه استشاري علاج الآلام المزمنة والعلاج التداخلي للعمود الفقري والمفاصل وآلام الأورام السرطانية </p>
+              {/* <br /> */}
+              - ماجستير علاج الألم، جامعة القاهرة
+              <br />
+              - دكتوراه علاج الألم
+              <br />
+              - عضو الجمعية المصرية لعلاج الألم
+              <br />
+              ثق بنا في صحتك واستمتع بالفرق.
+            </p>
         <div className="table-appointment">
-            <div className="box-day">
-            <div className="day">السبت</div>
-            <div className="day-hour">9:00 - 12:00</div>
-            </div>
-            <div className="box-day">
-            <div className="day">الاحد</div>
-            <div className="day-hour">9:00 - 12:00</div>
-            </div>
-            <div className="box-day">
-            <div className="day">الاثنين</div>
-            <div className="day-hour">9:00 - 12:00</div>
-            </div>
-            <div className="box-day">
-            <div className="day">الثلاثاء</div>
-            <div className="day-hour">9:00 - 12:00</div>
-            </div>
-            <div className="box-day">
-            <div className="day">الاربعاء</div>
-            <div className="day-hour">9:00 - 12:00</div>
-            </div>
-            <div className="box-day">
+          <div className="box-day">
+            <div className="day">عيادة المقطم</div>
+            <div className="day">من السبت للأربعاء</div>
+            <div className="day-hour">4:00 - 10:00</div>
+          </div>
+          <div className="box-day">
+            <div className="day"> عيادة التجمع</div>
             <div className="day">الخميس</div>
-            <div className="day-hour">9:00 - 12:00</div>
-            </div>
-            <div className="box-day">
+            <div className="day-hour">9:00 - 11:00</div>
+          </div>
+          <div className="box-day">
+            <div className="day">عيادة شبين</div>
             <div className="day">الجمعه</div>
-            <div className="day-hour">لا يوجد عمل</div>
-            </div>
+            <div className="day-hour">5:00 - 10:00</div>
+          </div>
         </div>
       </div>
     </section>
