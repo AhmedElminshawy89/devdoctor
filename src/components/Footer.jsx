@@ -58,18 +58,20 @@ const Footer = () => {
         </div> */}
         <div className="footer__col">
           <h4>العناوين</h4>
-          <p>
+          <a href="https://bit.ly/4aGudvf" target="_blank">
             <FaMapPin /> المقطم - شارع ٩ - عيادات شارع ٩ - الدور التالت - مركز
             الأفق الطبي
-          </p>
-          <p>
+          </a>
+          <br />
+          <a href="https://2h.ae/MbRD" target="_blank">
             <FaMapPin /> التجمع الخامس شارع التسعين الشمالي مول cmc الطبي الدور
             الثالث عياده ٣٢٨
-          </p>
-          <p>
+          </a>
+          <br />
+          <a href="https://bit.ly/3PoCRpA" target="_blank">
             <FaMapPin /> شبين الكوم مستشفى الرازي - شارع صبري أبو علم نهاية شارع
             الشهداء - برج أجياد المدينه
-          </p>
+          </a>
         </div>
         <div className="footer__col">
           <h4>اتصل بنا</h4>

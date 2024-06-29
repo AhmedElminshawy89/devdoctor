@@ -22,7 +22,7 @@ function App() {
       <Appointment/>
       <Form/>
       <Footer /> 
-      <ContactBtn />
+      {/* <ContactBtn /> */}
       <ContactPhone />
     </>
   );

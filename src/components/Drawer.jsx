@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagram, FaTimes, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTimes, FaYoutube } from "react-icons/fa";
 
 const Drawer = ({ isOpen, onClose }) => {
   return (
@@ -49,10 +49,19 @@ const Drawer = ({ isOpen, onClose }) => {
           </li>
         </ul>
         <div className="drawer__socials">
-          {/* <FaFacebook />
-          <FaInstagram />
-          <FaTwitter /> */}
-        </div>
+        <a href="https://www.facebook.com/drahmedshamaa" target="_blank">
+                <FaFacebookF />
+              </a>
+          <a href="https://www.instagram.com/drahmedshamaa" target="_blank">
+                <FaInstagram />
+              </a>
+          <a
+                href="https://www.youtube.com/@drAhmedshamaa
+"
+                target="_blank"
+              >
+                <FaYoutube />
+              </a>        </div>
       </div>
     </>
   );
