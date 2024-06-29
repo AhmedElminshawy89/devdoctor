@@ -140,7 +140,7 @@ const Header = () => {
               <br />
               ثق بنا في صحتك واستمتع بالفرق.
             </p>
-            <a class="btn" href="https://wa.me/01201818272" target="_blank">
+            <a class="btn" href="https://wa.me/+201201818272" target="_blank">
               تواصل معنا
             </a>
           </div>

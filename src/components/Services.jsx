@@ -12,7 +12,7 @@ const Services = () => {
             فريدة مصممة خصيصًا لاحتياجاتك الفريدة.
           </p>
         </div>
-        <a href="https://wa.me/01201818272" target="_blank" className="service__btn">للتواصل معنا</a>
+        <a href="https://wa.me/+201201818272" target="_blank" className="service__btn">للتواصل معنا</a>
       </div>
       <div className="service__grid">
         <div className="service__card">

@@ -19,7 +19,7 @@ const SecServices = () => {
           </p>
         </div>
         <a
-          href="https://wa.me/01201818272"
+          href="https://wa.me/+201201818272"
           target="_blank"
           className="service__btn"
         >
