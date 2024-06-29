@@ -804,12 +804,26 @@ header {
     grid-template-columns: 1fr 1fr ;
   }
 }
-@media screen and (max-width:368px) {
+@media screen and (max-width:600px) {
+  .appointment{
+    width: 100% !important;
+  }
   .table-appointment-wrapper{
-    max-width: 200px;
     width: 100%;
     overflow-x: auto;
   }
+  .apointment-text {
+    padding: 50px 20px !important;
+}
+.contact-us {
+  padding: 0 0px !important;
+  padding-bottom: 0;
+}
+.contact-us>h2,
+.contact-us>p{
+  padding: 0 20px !important;
+}
+
 }
 @media(max-width:992px){
   .appointment{
