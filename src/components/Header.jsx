@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
-import AOS from 'aos'; // Import AOS
-import 'aos/dist/aos.css'; // Import AOS styles
 import Drawer from "../components/Drawer";
 import logo from "../assets/image/logo.png";
 
@@ -37,14 +35,6 @@ const Header = () => {
 
     setActiveSection(currentSection);
   };
-
-  useEffect(() => {
-    AOS.init(); 
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   const handleLinkClick = (sectionId) => {
     setActiveSection(sectionId);

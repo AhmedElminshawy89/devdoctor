@@ -2,14 +2,8 @@ import { FaHandHoldingHeart } from "react-icons/fa";
 import doc from "../assets/image/dr4.jpg";
 import { TiGroup } from "react-icons/ti";
 import { MdCleanHands } from "react-icons/md";
-import { useEffect } from "react";
-import AOS from 'aos'; 
-import 'aos/dist/aos.css'; 
 
 const FavOther = () => {
-  useEffect(() => {
-    AOS.init(); 
-  }, []);
 
   return (
     <section className="section__container why__container" id="اهتمامنا">

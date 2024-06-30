@@ -1,12 +1,7 @@
 import about from "../assets/image/dr.jpg";
-import AOS from 'aos'; // Import AOS
-import 'aos/dist/aos.css'; // Import AOS styles
-import { useEffect } from "react";
+
 
 const AboutUS = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
 
   return (
     <section className="section__container about__container" id="تعرف_علينا">

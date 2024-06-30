@@ -1,6 +1,3 @@
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
 import AboutUs from "./components/AboutUs";
 import Appointment from "./components/Appointment";
 import ContactPhone from "./components/ContactPhone";
@@ -13,9 +10,6 @@ import SecServices from "./components/SecServices";
 import Services from "./components/Services";
 
 function App() {
-  useEffect(() => {
-    AOS.init(); 
-  }, []);
 
   return (
     <>

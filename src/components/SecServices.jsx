@@ -1,6 +1,4 @@
-import { useEffect } from "react";
-import AOS from 'aos'; // Import AOS
-import 'aos/dist/aos.css'; // Import AOS styles
+
 
 import img from "../assets/image/serv.jpg";
 import img2 from "../assets/image/sev2.jpg";
@@ -13,9 +11,6 @@ import img8 from "../assets/image/sev8.jpg";
 import img9 from "../assets/image/sev9.webp";
 
 const SecServices = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
 
   return (
     <section id="خدماتنا" className="section__container service__container">

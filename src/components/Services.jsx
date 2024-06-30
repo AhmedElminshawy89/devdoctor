@@ -1,12 +1,6 @@
-import { useEffect } from "react";
 import { MdMedicalServices } from "react-icons/md";
-import AOS from 'aos'; 
-import 'aos/dist/aos.css';
 
 const Services = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
 
   return (
     <section className="section__container service__container" data-aos="fade-up">

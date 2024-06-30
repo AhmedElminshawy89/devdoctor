@@ -1,16 +1,11 @@
 import React, { useRef, useEffect } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import emailjs from "@emailjs/browser";
 
 const Form = () => {
   const form = useRef();
 
-  useEffect(() => {
-    AOS.init();
-  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();

@@ -1,13 +1,7 @@
-import { useEffect } from "react";
-import AOS from 'aos'; // Import AOS
-import 'aos/dist/aos.css'; // Import AOS styles
 import img from "../assets/image/dr3.jpg";
 import { TiTick } from "react-icons/ti";
 
 const Appointment = () => {
-  useEffect(() => {
-    AOS.init(); // Initialize AOS with the once option
-  }, []);
 
   return (
     <section id="المواعيد" className="appointment">
