@@ -25,9 +25,10 @@
 
 html {
   scroll-behavior: smooth;
+}
+body{
   overflow-x: hidden;
 }
-
 .section__container {
   max-width: var(--max-width);
   margin: auto;
@@ -1096,8 +1097,12 @@ td:nth-child(4) {
 .contact-us {
   padding: 110px 70px;
   padding-bottom: 0;
+  overflow: hidden !important;
 }
 
+section{
+  overflow: hidden !important;
+}
 @media screen and (max-width:468px) {
   .header__content {
     margin-top: -120px;
