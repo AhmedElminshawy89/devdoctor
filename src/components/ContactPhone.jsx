@@ -25,12 +25,11 @@ const ContactPhone = () => {
             <FaWhatsapp />
           </a>
         </div>
-        <div className="instagram">
+        {/* <div className="instagram">
           <a href="https://www.instagram.com/drahmedshamaa" target="_blank" rel="noreferrer">
             <FaInstagram />
           </a>
         </div>
-        {/* https://www.facebook.com/drahmedshamaa */}
         <div className="messenger">
           <a href="https://m.me/drahmedshamaa" target="_blank" rel="noreferrer">
             <FaFacebookMessenger />
@@ -40,7 +39,7 @@ const ContactPhone = () => {
           <a href="https://www.youtube.com/@drAhmedshamaa" target="_blank" rel="noreferrer">
             <FaYoutube />
           </a>
-        </div>
+        </div> */}
       </div>
       <style jsx>{`
         .contact-btn-wrapper {

@@ -1,5 +1,7 @@
-import { FaBars } from "react-icons/fa";
 import { useState, useEffect } from "react";
+import { FaBars } from "react-icons/fa";
+import AOS from 'aos'; // Import AOS
+import 'aos/dist/aos.css'; // Import AOS styles
 import Drawer from "../components/Drawer";
 import logo from "../assets/image/logo.png";
 
@@ -37,6 +39,7 @@ const Header = () => {
   };
 
   useEffect(() => {
+    AOS.init(); 
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -58,11 +61,11 @@ const Header = () => {
             isFixed ? "fixed-header" : "section__container nav__container"
           }`}
         >
-          <div className="nav__logo">
+          <div className="nav__logo" data-aos="fade-down">
             <img src={logo} alt="" />
             احمد <span>شاما </span>
           </div>
-          <ul className="nav__links">
+          <ul className="nav__links"  data-aos="fade-down">
             <li
               className={`link ${
                 activeSection === "الرئيسية" ? "active-link" : ""
@@ -118,29 +121,29 @@ const Header = () => {
         </nav>
         <Drawer isOpen={drawerOpen} onClose={handleDrawerClose} />
         <div className="section__container header__container">
-          <div className="header__content">
+          <div className="header__content" data-aos="fade-up" data-aos-delay="500">
             <h1>أحد رواد علاج الألم التداخلي في مصر والعالم العربي</h1>
             <p>
-            د أحمد شامه مدرس التخدير وعلاج الألم التداخلي جامعة القاهره - المعهد القومي للأورام 
-استشاري علاج الآلام التداخلي للعمود الفقري والمفاصل وآلام الاورام السرطانيه جامعة القاهرة 
-دكتوراه علاج الألم جامعة القاهرة 
-عضو الجمعيه المصريه لعلاج الألم حيث تعتبر تجارب المرضى الاستثنائية أولويتنا. مع الرعاية
+              د أحمد شامه مدرس التخدير وعلاج الألم التداخلي جامعة القاهره - المعهد القومي للأورام 
+              استشاري علاج الآلام التداخلي للعمود الفقري والمفاصل وآلام الاورام السرطانيه جامعة القاهرة 
+              دكتوراه علاج الألم جامعة القاهرة 
+              عضو الجمعيه المصريه لعلاج الألم حيث تعتبر تجارب المرضى الاستثنائية أولويتنا. مع الرعاية
               المتعاطفة، والمرافق المتطورة، والنهج الموجه نحو المريض، نحن
               ملتزمون بصحتك.
-              </p>
-              <p>
-                {/* دكتور احمد شامه استشاري علاج الآلام المزمنة والعلاج التداخلي
-                للعمود الفقري والمفاصل وآلام الأورام السرطانية{" "}
-              </p>
-              - ماجستير علاج الألم، جامعة القاهرة
-              <br />
-              - دكتوراه علاج الألم
-              <br /> */}
-              - عضو الجمعية المصرية لعلاج الألم
-              <br />
-              ثق بنا في صحتك واستمتع بالفرق.
             </p>
-            <a class="btn" href="https://wa.me/+201201818272" target="_blank">
+            <p data-aos="fade-up" data-aos-delay="400">
+            {/* دكتور احمد شامه استشاري علاج الآلام المزمنة والعلاج التداخلي
+              للعمود الفقري والمفاصل وآلام الأورام السرطانية{" "}
+            </p>
+            - ماجستير علاج الألم، جامعة القاهرة
+            <br />
+            - دكتوراه علاج الألم
+            <br /> */}
+            - عضو الجمعية المصرية لعلاج الألم
+            <br />
+            ثق بنا في صحتك واستمتع بالفرق.
+            </p>
+            <a class="btn" href="https://wa.me/+201201818272" target="_blank" data-aos="fade-up" data-aos-delay="300">
               تواصل معنا
             </a>
           </div>

@@ -1,9 +1,16 @@
 import about from "../assets/image/dr.jpg";
+import AOS from 'aos'; // Import AOS
+import 'aos/dist/aos.css'; // Import AOS styles
+import { useEffect } from "react";
 
 const AboutUS = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section className="section__container about__container" id="تعرف_علينا">
-      <div className="about__content">
+      <div className="about__content" data-aos="fade-left" data-aos-delay="400">
         <h2 className="section__header">معلومات عنا</h2>
         <p>
          نقدم خدمات متخصصة في علاج مجموعة متنوعة من الألم، بما في ذلك الإنزلاق الغضروفي، خشونة مفاصل الركبة والكتف والحوض، آلام العمود الفقري وعرق النسا، وآلام الظهر بعد العمليات.        </p>
@@ -12,7 +19,7 @@ const AboutUS = () => {
         <p>
         العرق الزائد في اليدين والقدمين، الشوكة العظمية، تشنج العضلات، والآلام المزمنة بشكل شامل من خلال استخدام علاجات شخصية مبنية على الدليل العلمي والتوجيهات السريرية المتقدمة.        </p>
       </div>
-      <div className="about__image">
+      <div className="about__image" data-aos="fade-right" data-aos-delay="400">
         <img src={about} alt="معلومات عنا" />
       </div>
     </section>

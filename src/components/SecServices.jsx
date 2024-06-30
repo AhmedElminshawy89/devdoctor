@@ -1,3 +1,7 @@
+import { useEffect } from "react";
+import AOS from 'aos'; // Import AOS
+import 'aos/dist/aos.css'; // Import AOS styles
+
 import img from "../assets/image/serv.jpg";
 import img2 from "../assets/image/sev2.jpg";
 import img3 from "../assets/image/sev3.jpg";
@@ -7,10 +11,15 @@ import img6 from "../assets/image/sev6.jpg";
 import img7 from "../assets/image/sev7.jpg";
 import img8 from "../assets/image/sev8.jpg";
 import img9 from "../assets/image/sev9.webp";
+
 const SecServices = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section id="خدماتنا" className="section__container service__container">
-      <div className="service__header">
+      <div className="service__header" data-aos="fade-down" >
         <div className="service__header__content">
           <h2 className="section__header">خدمتنا</h2>
           <p>
@@ -22,12 +31,14 @@ const SecServices = () => {
           href="https://wa.me/+201201818272"
           target="_blank"
           className="service__btn"
+          data-aos="fade-down"
+          data-aos-delay="200"
         >
           للتواصل عبر الواتساب
         </a>
       </div>
       <div className="service__grid">
-        <div className="service__card">
+        <div className="service__card" data-aos="fade-up" data-aos-delay="100">
           <div className="image">
             <img src={img} alt="" />
           </div>
@@ -40,7 +51,7 @@ const SecServices = () => {
           </p>
           <a href="#للتواصل_والحجز">للتواصل والحجز</a>
         </div>
-        <div className="service__card">
+        <div className="service__card" data-aos="fade-up" data-aos-delay="200">
           <div className="image">
             <img src={img2} alt="" />
           </div>
@@ -53,7 +64,7 @@ const SecServices = () => {
           </p>
           <a href="#للتواصل_والحجز">للتواصل والحجز</a>
         </div>
-        <div className="service__card">
+        <div className="service__card" data-aos="fade-up" data-aos-delay="300">
           <div className="image">
             <img src={img3} alt="" />
           </div>
@@ -66,19 +77,19 @@ const SecServices = () => {
             الحركية للمريض.
           </p>
           <a href="#للتواصل_والحجز">للتواصل والحجز</a>
-        </div>{" "}
-        <div className="service__card">
+        </div>
+        <div className="service__card" data-aos="fade-up" data-aos-delay="400">
           <div className="image">
             <img src={img4} alt="" />
           </div>
-          <h4>آلام العمود الفقري وعرق النسا وآلام أسفل الظهر سطر وصف</h4>
+          <h4>آلام العمود الفقري وعرق النسا وآلام أسفل الظهر</h4>
           <p>
             الألم في العمود الفقري وآلام أسفل الظهر وعرق النسا هي أعراض شائعة
             تشير إلى مشاكل في الظهر قد تشمل التهابات العضلات أو التوتر العصبي.
           </p>
           <a href="#للتواصل_والحجز">للتواصل والحجز</a>
         </div>
-        <div className="service__card">
+        <div className="service__card" data-aos="fade-up" data-aos-delay="500">
           <div className="image">
             <img
               src={img5}
@@ -93,7 +104,7 @@ const SecServices = () => {
           </p>
           <a href="#للتواصل_والحجز">للتواصل والحجز</a>
         </div>
-        <div className="service__card">
+        <div className="service__card" data-aos="fade-up" data-aos-delay="600">
           <div className="image">
             <img src={img6} alt="" />
           </div>
@@ -104,16 +115,16 @@ const SecServices = () => {
             الرأس إلى المخ.
           </p>
           <a href="#للتواصل_والحجز">للتواصل والحجز</a>
-        </div>{" "}
-        <div className="service__card">
+        </div>
+        <div className="service__card" data-aos="fade-up" data-aos-delay="700">
           <div className="image">
             <img src={img7} alt="" />
           </div>
           <h4> آلام اختناق والتهابات الأعصاب الطرفية</h4>
           <p>آلام الاختناق والتهابات الأعصاب الطرفية تعتبر من المشاكل الصحية التي قد تسبب تأثيرات مؤلمة ومزعجة على الأفراد.</p>
           <a href="#للتواصل_والحجز">للتواصل والحجز</a>
-        </div>{" "}
-        <div className="service__card">
+        </div>
+        <div className="service__card" data-aos="fade-up" data-aos-delay="800">
           <div className="image">
             <img src={img8} alt="" />
           </div>
@@ -121,7 +132,7 @@ const SecServices = () => {
           <p>آلام الأورام السرطانية تتفاوت في شدتها وممكن أن تكون مصاحبة لأعراض أخرى مرتبطة بالورم نفسه أو بالعلاجات المستخدمة لمكافحته.</p>
           <a href="#للتواصل_والحجز">للتواصل والحجز</a>
         </div>
-        <div className="service__card">
+        <div className="service__card" data-aos="fade-up" data-aos-delay="900">
           <div className="image">
             <img src={img9} alt="" />
           </div>
